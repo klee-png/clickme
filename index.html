@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Will You Be My Valentine?</title>
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: 'Great Vibes', cursive;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f9e3e3;
+      text-align: center;
+      flex-direction: column;
+    }
+    h1 {
+      color: #d9534f;
+      margin: 0;
+      font-size: 48px;
+      font-weight: normal;
+      position: relative;
+      padding-top: 20px;
+    }
+    .button {
+      background-color: #d9534f;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 10px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      font-family: 'Dancing Script', cursive;
+      font-size: 24px;
+      transition: background-color 0.3s ease;
+    }
+    .button:hover {
+      background-color: #c9302c;
+    }
+    .emoji {
+      font-size: 100px;
+      margin-top: 20px;
+      animation: float 3s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Will You Be My Valentine?</h1>
+    <button class="button" onclick="redirectToLetter()">Yes</button>
+    <button class="button" onclick="redirectToPoem()">Of Course</button>
+    <div class="emoji">🐱</div>
+  </div>
+
+  <script>
+    function redirectToLetter() {
+      window.location.href = "letter.html";
+    }
+    function redirectToPoem() {
+      window.location.href = "poem.html";
+    }
+  </script>
+</body>
+</html>
